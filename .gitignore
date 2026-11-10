@@ -16,3 +16,8 @@
 !/examples/
 !/examples/before.jsonl
 !/examples/after.jsonl
+!/package.json
+!/index.js
+!/cordis.patch.yml
+!/tests/
+!/tests/harness.test.mjs
