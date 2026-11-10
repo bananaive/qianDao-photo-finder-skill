@@ -1,0 +1,16 @@
+{
+  "name": "dsh-qiandao-photo-finder",
+  "version": "0.1.0",
+  "description": "Find 2026 Qiandao Lake cycling race photo candidates by bib and gear, and compare album snapshots.",
+  "type": "module",
+  "main": "./index.js",
+  "license": "MIT",
+  "repository": { "type": "git", "url": "git+https://github.com/bananaive/qianDao-photo-finder-skill.git" },
+  "keywords": ["dsh-plugin", "deepseek-harness", "agent-skills", "cycling", "photo-search"],
+  "files": ["index.js", "cordis.patch.yml", "skills/qiandao-photo-finder", "examples", "README.md", "LICENSE"],
+  "engines": { "node": ">=22", "dsh": ">=0.2.1-rc.2 <0.2.2 || >=0.2.2-0 <0.3.0-0" },
+  "peerDependencies": { "@deepseek-ai/dsh-skill-filesystem": ">=0.2.1-rc.2 <0.2.2 || >=0.2.2-0 <0.3.0-0" },
+  "devDependencies": { "@deepseek-ai/cordis": "~4.0.5", "@deepseek-ai/dsh-skill": "0.2.1-rc.2", "@deepseek-ai/dsh-skill-filesystem": "0.2.1-rc.2" },
+  "scripts": { "test": "node --test tests/harness.test.mjs" },
+  "dsh": { "bundle": { "patch": "./cordis.patch.yml" } }
+}
